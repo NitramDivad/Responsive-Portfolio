@@ -52,17 +52,20 @@ header {
 }
 
 #header-name {
-	position: relative; 
+	position: relative;
+
 	top: 0;
 	float: left;
 	height: 90px;
 	min-height: 100%;
 	overflow: auto;
-}
-
-#header-name {
 	width: 30%;
 	background-color: #4aaaa5;
+}
+
+nav {
+
+	float: inline-block;
 }
 
 #name {
@@ -291,4 +294,167 @@ ul li {
 #btnsubmit:hover, #btnreset:hover {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 	padding-right: 25px;
+}
+
+
+/* Media Queries for Responsive Layout */
+
+@media only screen and (max-width: 980px) {
+
+	#list-group {
+		margin-right: 8%;
+	}
+
+    #about-me {
+		width: 85%;
+	}
+	
+	#about-content {
+		width: 100%;
+	}
+
+	#about-content p {
+		width: 90%;
+	}
+
+    #about-img {
+		width: 35%;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+    #my-portfolio {
+		width: 85%;
+    }
+
+    #contact-me {
+		width: 85%;
+	}
+	
+	#_name, #_email, #_message {
+		width: 85%;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	#list-group {
+		margin-right: 27%;
+	}
+
+    #about-me {
+		width: 85%;
+	}
+	
+	#about-content {
+		width: 100%;
+	}
+
+	#about-content p {
+		width: 90%;
+	}
+
+    #about-img {
+		width: 35%;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+    #my-portfolio {
+		width: 85%;
+    }
+
+    #contact-me {
+		width: 85%;
+	}
+	
+	#_name, #_email, #_message {
+		width: 85%;
+	}
+}
+
+
+@media only screen and (max-width: 640px) {
+
+	#header-border {
+		position: static;
+		width: 100%;
+
+	}
+
+	header {
+		width: 100%;
+	}
+
+	nav {
+		position: static;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+	}
+
+	#list-group {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#nav-a {
+		width: 100%;
+		display: inline-block;
+		float: none;
+		text-align: center;
+	}
+
+	header {
+		width: 100%;
+
+	}
+
+	#header-name {
+		width: 100%;
+		text-align: center;
+
+	}
+
+    #about-me {
+		position: static;
+		width: 85%;
+	}
+	
+	#about-content {
+		width: 100%;
+	}
+
+	#about-content p {
+		width: 90%;
+	}
+
+    #about-img {
+		width: 35%;
+	}
+
+	hr {
+		width: 90%;
+	}
+
+    #my-portfolio {
+		width: 85%;
+	}
+
+	column {
+		width: 5%;
+	}
+
+    #contact-me {
+		width: 85%;
+	}
+	
+	#_name, #_email, #_message {
+		width: 85%;
+	}
 }
