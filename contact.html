@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="header-border">
+        <header>
+            <div id="header-name">
+                <p id="name">David Martin</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav-a" href="contact.html">Contact</a></li>
+                    <li><a class="nav-a" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-a" href="index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="clear-left"></div>
+    </div>
+
+    <div id="content">
+        <div id="contact-me">
+            <h1>Contact</h1>
+            <hr>
+        
+            <form id="contact" action="https://formspree.io/webdevelopment.du@gmail.com" method="post">
+                <label for="_name">Name</label><br>
+                <input type="text" name="name" id="_name" placeholder="John Smith" required/><br>
+                <label for="_email">Email</label><br>
+                <input type="email" name="email" id="_email" placeholder="example@gmail.com" required/><br>
+                <label for="_message">Message</label><br>
+                <textarea rows="8" name="message" id="_message" required></textarea><br>
+                <input type="submit" value="Submit" name="submit" id="btnsubmit">
+                <div id="btnspacing"></div>
+                <input type="reset" value="Reset" name="reset" id="btnreset"><br>
+                <input type="hidden" name="_subject" value="My Portfolio Contact Form Inquiry" />
+                <input type="text" name="_gotcha" id="_spam" />
+                <input type="hidden" name="_next" value="" />
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy;</p> 
+    </div>
+</body>
+</html>
